@@ -1,0 +1,25 @@
+name: LH-API
+version: '1.0'
+main: net.jetluna.lasthardcore.api.LastHardcoreAPI
+api-version: '1.21'
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:1.9.22
+commands:
+  ban:
+    description: Выдать бан игроку
+    usage: /ban <игрок> [причина]
+  mute:
+    description: Выдать мут игроку
+    usage: /mute <игрок> [причина]
+  kick:
+    description: Кикнуть игрока
+    usage: /kick <игрок> [причина]
+  unban:
+    description: Снять бан
+    usage: /unban <игрок>
+  unmute:
+    description: Снять мут
+    usage: /unmute <игрок>
+  setrank:
+    description: Выдать привилегию игроку
+    usage: /setrank <игрок> <ранг>

@@ -1,0 +1,20 @@
+name: LH-Auth
+version: '1.0'
+main: net.jetluna.lasthardcore.auth.LHAuthPlugin
+api-version: '1.21'
+depend: [LH-API]
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:1.9.22
+  - org.mindrot:jbcrypt:0.4
+commands:
+  reg:
+    description: Регистрация аккаунта
+    usage: /reg <пароль> <пароль>
+    aliases: [ register ]
+  login:
+    description: Вход в аккаунт
+    usage: /login <пароль>
+    aliases: [ l ]
+  setauthspawn:
+    description: Установить точку спавна для лобби авторизации
+    usage: /setauthspawn

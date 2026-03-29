@@ -1,0 +1,16 @@
+name: LH-Game
+version: '1.0'
+main: net.jetluna.lasthardcore.game.LHGamePlugin
+api-version: '1.21'
+depend: [LH-API]
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:1.9.22
+commands:
+  sc:
+    description: Стафф-чат
+  msg:
+    description: Личные сообщения
+    aliases: [w, tell]
+  r:
+    description: Ответить на личное сообщение
+    aliases: [reply]
