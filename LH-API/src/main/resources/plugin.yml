@@ -2,8 +2,11 @@ name: LH-API
 version: '1.0'
 main: net.jetluna.lasthardcore.api.LastHardcoreAPI
 api-version: '1.21'
+author: JetLuna
+
 libraries:
   - org.jetbrains.kotlin:kotlin-stdlib:1.9.22
+
 commands:
   ban:
     description: Выдать бан игроку

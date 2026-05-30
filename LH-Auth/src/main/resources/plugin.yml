@@ -3,9 +3,12 @@ version: '1.0'
 main: net.jetluna.lasthardcore.auth.LHAuthPlugin
 api-version: '1.21'
 depend: [LH-API]
+author: JetLuna
+
 libraries:
   - org.jetbrains.kotlin:kotlin-stdlib:1.9.22
   - org.mindrot:jbcrypt:0.4
+
 commands:
   reg:
     description: Регистрация аккаунта

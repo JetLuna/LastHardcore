@@ -12,12 +12,12 @@ class PlayerListener(private val api: LastHardcoreAPI) : Listener {
     @EventHandler(priority = EventPriority.NORMAL)
     fun onPreLogin(event: AsyncPlayerPreLoginEvent) {
         api.rankManager.loadPlayer(event.uniqueId, event.name)
-        api.playtimeManager.loadPlayer(event.uniqueId) // Грузим время
+        api.playtimeManager.loadPlayer(event.uniqueId)
     }
 
     @EventHandler
     fun onQuit(event: PlayerQuitEvent) {
         api.rankManager.unloadPlayer(event.player.uniqueId)
-        api.playtimeManager.saveAndUnloadPlayer(event.player.uniqueId) // Сохраняем время
+        api.playtimeManager.saveAndUnloadPlayer(event.player.uniqueId)
     }
 }

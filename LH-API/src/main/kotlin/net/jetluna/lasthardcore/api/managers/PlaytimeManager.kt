@@ -6,8 +6,6 @@ import java.util.UUID
 import java.util.concurrent.ConcurrentHashMap
 
 class PlaytimeManager(private val api: LastHardcoreAPI) {
-
-    // Кеш: UUID -> количество сыгранных минут
     private val playtimeCache = ConcurrentHashMap<UUID, Int>()
 
     fun loadPlayer(uuid: UUID) {
